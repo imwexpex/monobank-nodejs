@@ -6,7 +6,7 @@ class Monobank {
         this.token = token;
     }
 
-    async getCurrency() {
+    async getCurrencyRates() {
         return await call({ endpoint: Endpoint.BANK.CURRENCY });
     }
 
